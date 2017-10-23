@@ -12,9 +12,10 @@
 
 
 二.实现思路
-1).爬取的是链家网的成都地区的新房源，爬出房源的地址、名字、url，价格这四个。我是基于python的beautifu实现爬虫的，爬取数据的时候没有遇到ip限制的问题，所以并未使用ip代理，为了提高爬取速率采用“协程”进行处理
 
-2)
-高德地图API调用
+1.beautifulsoup及协程爬取房源信息
+爬取的是链家网的成都地区的新房源，爬出房源的地址、名字、url，价格这四个。我是基于python的beautifulsoup实现爬虫的，爬取数据的时候没有遇到ip限制的问题，所以并未使用ip代理，为了提高爬取速率采用“协程”进行处理。
+
+2.高德地图API调用
 采用高德地图对房源进行可视化操作，在工程根目录下创建map.html文件，页面大框架可直接从示例中心复制：高德 JavaScript API 示例中心http://lbs.amap.com/api/javascript-api/example/map/map-show/。
 高德可视化的实现参考：http://www.jianshu.com/p/4ce0b0588fa3
